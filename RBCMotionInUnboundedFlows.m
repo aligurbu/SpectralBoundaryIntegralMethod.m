@@ -4,7 +4,7 @@
 clear all; close all; clc;
 addpath(genpath('../SpectralBoundaryIntegralMethod.m'))
 
-verbose_Plot = true;
+verbose_Plot = false;
 
 %% Input the model and parameters for the analysis from Models folder
 LoadElasticRBC_Shear_N16
@@ -34,3 +34,6 @@ if verbose_Plot
     axis on
     xlabel('X'); ylabel('Y'); zlabel('Z');
 end
+
+%% Create rotation matrices
+RotationMatrix = RotationMatrixForSHCoefficients(N, nlat, nlon, thet, phi);
