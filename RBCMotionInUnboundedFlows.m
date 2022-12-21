@@ -15,3 +15,7 @@ LoadElasticRBC_Shear_N16
 
 %% Create geometry of RBC: undeformed geometry of an RBC
 Xi = getRBCInitialGeometry(thet,phi,InitXi,InitOrient);
+
+%% Initial conditions:
+%% spherical harmonics coefficients of the undeformed RBC coordinates
+[aXi,bXi] = shagcm(Xi);
