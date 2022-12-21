@@ -20,10 +20,8 @@ viscousStress_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
 epsilbrev_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
 
 %%
-F_ = zeros(3,Numframe);
-ErrMemForce_ = zeros(Numframe,1);
-M_ = zeros(3,Numframe);
-ErrMemMomentForce_ = zeros(Numframe,1);
+ErrMemForce = zeros(Numframe,1);
+ErrMemMomentForce = zeros(Numframe,1);
 
 nframe = 0;
 T_step = zeros(Numframe,1);
@@ -50,11 +48,9 @@ for nstep = 0:NSTEPS-1
     u = shsgcm(au, bu);
 
     %%
-    [F__, M__, IntnormF, IntnormM] = integrateForce(axi, bxi, f);
-    F_(:,nframe) = F__;
-    M_(:,nframe) = M__;
-    ErrMemForce_(nframe) = (norm(F__)/IntnormF)*100;
-    ErrMemMomentForce_(nframe) = (norm(M__)/IntnormM)*100;
+    [F, M, IntnormF, IntnormM] = integrateForce(axi, bxi, f);
+    ErrMemForce(nframe) = (norm(F)/IntnormF)*100;
+    ErrMemMomentForce(nframe) = (norm(M)/IntnormM)*100;
 end
 %% Dimensionalization
 T_step = T_step/RefShearRate; % in seconds
