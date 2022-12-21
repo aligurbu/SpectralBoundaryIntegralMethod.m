@@ -116,10 +116,10 @@ else
     ColorInd = 'black';
 end
 hold on
-scr_siz = get(0,'ScreenSize');
-scr_siz([1 2]) = scr_siz([1 2]) + 100;
-scr_siz([3 4]) = scr_siz([3 4]) - 200;
-set(gcf, 'Position',  scr_siz)
+% scr_siz = get(0,'ScreenSize');
+% scr_siz([1 2]) = scr_siz([1 2]) + 100;
+% scr_siz([3 4]) = scr_siz([3 4]) - 200;
+% set(gcf, 'Position',  scr_siz)
 
 p1 = plot3(CellX(1,1,1), ...
            CellY(1,1,1), ...

@@ -64,10 +64,10 @@ else
     ColorInd = 'black';
 end
 hold on
-scr_siz = get(0,'ScreenSize');
-scr_siz([1 2]) = scr_siz([1 2]) + 100;
-scr_siz([3 4]) = scr_siz([3 4]) - 200;
-set(gcf, 'Position',  scr_siz)
+% scr_siz = get(0,'ScreenSize');
+% scr_siz([1 2]) = scr_siz([1 2]) + 100;
+% scr_siz([3 4]) = scr_siz([3 4]) - 200;
+% set(gcf, 'Position',  scr_siz)
 
 hRBC = patch('Faces',faces','Vertices',Vertices(:,:,1),...
              'FaceColor','r','FaceAlpha',0.6,...
