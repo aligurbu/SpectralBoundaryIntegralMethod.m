@@ -56,8 +56,8 @@ for nstep = 0:NSTEPS-1
     ErrMemForce(nframe) = (norm(F)/IntegralnormF)*100;
     ErrMemMomentForce(nframe) = (norm(M)/IntegralnormM)*100;
 
-    [Volume(nframe), Area(nframe), IntegralVelocityTimesNormal(nframe)] = ...
-                                                getVolumeArea(axi, bxi, u);
+    [Volume(nframe), Area(nframe)] = getVolumeArea(axi, bxi);
+
 end
 %% Dimensionalization
 T_step = T_step/RefShearRate; % in seconds
@@ -67,5 +67,3 @@ ErrorVolume = max(abs(Volume(1)-max(Volume))/(Volume(1)), ...
                   abs(Volume(1)-min(Volume))/(Volume(1)))*100
 ErrorArea = max(abs(Area(1)-max(Area))/(Area(1)), ...
                abs(Area(1)-min(Area))/(Area(1)))*100
-IntegralVelocityTimesNormal = ...
-  IntegralVelocityTimesNormal*(RefLength*10^(6))^3*RefShearRate; % \mum^3/s
