@@ -37,3 +37,8 @@ Tau = RelaxationTime*RefShearRate; % the relaxation time of the Maxwell element
 StVenantKirchhoff = false;
 NeoHookean = false;
 Skalak = true;
+
+%% Degree of spherical harmonic expansion
+N = 16;
+UpSampleFactor = 2; % Up-sample ratio for the force calculations
+NGSphere = 2*N; % Quadrature on sphere parameter
