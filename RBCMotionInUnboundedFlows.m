@@ -127,6 +127,11 @@ for nstep = 0:1%NSTEPS
         fwrite(fidSol,writecu,'double');
     end
 
+	%% Update state (Forward Euler time scheme)
+    axi = axi + DT*au;
+    bxi = bxi + DT*bu;
+    xi = shsgcm(axi,bxi);
+
 
 
 
