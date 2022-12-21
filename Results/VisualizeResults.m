@@ -34,6 +34,8 @@ blackBackground = true; % if false then white background
 %% Run Visualize m-files one at a time.
 % VisualizeMembraneShape
 
-CaptureFramesMembraneShape
+% CaptureFramesMembraneShape
+
+VisualizeIsotropicMembraneTension
 
 fclose('all');
