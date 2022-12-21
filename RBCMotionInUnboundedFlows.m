@@ -42,3 +42,18 @@ RotationMatrix = RotationMatrixForSHCoefficients(N, nlat, nlon, thet, phi);
 mask_a = repmat(triu(true(N+1),0),1,1,3);
 mask_b = mask_a;
 mask_b(1,:,:) = false;
+
+%% Set up output file
+fidTime = fopen(['Time_',name,'.dat'],'w');
+fidCoord = fopen(['Coord_',name,'.dat'],'w');
+fidMemFor = fopen(['MemFor_',name,'.dat'],'w');
+fidSol = fopen(['Sol_',name,'.dat'],'w');
+
+%% Set up time integration
+cu = zeros(3*(N+1)^2,1);
+
+%% Initialization
+xi = Xi; axi = aXi; bxi = bXi;
+
+viscousStress_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
+epsilbrev_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
