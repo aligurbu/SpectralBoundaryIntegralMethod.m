@@ -132,7 +132,19 @@ for nstep = 0:1%NSTEPS
     bxi = bxi + DT*bu;
     xi = shsgcm(axi,bxi);
 
-
+    %% Set the center of the mass of RBC to the initial position, InitXi
+    if ParabolicFlow
+        [gxi_thet, gxi_phi] = gradgcm(axi, bxi);
+        normalVector = cross(gxi_thet, gxi_phi, 3);
+        xi_dot_normalVector = sum(xi.*normalVector,3);
+        xi_xi_dot_normalVector = xi.*xi_dot_normalVector;
+        V = sum(sum(xi_dot_normalVector.*weight))*(2*pi/nlon)/3;
+        Int_xi_xi_dot_normalVector_dA = ...
+                    sum(sum(xi_xi_dot_normalVector.*weight))*(2*pi/nlon)/4;
+        CenterMass = reshape(Int_xi_xi_dot_normalVector_dA./V,3,1);
+        xi = xi - reshape((CenterMass - InitXi),1,1,3);
+    end
+    [axi,bxi] = shagcm(xi);
 
 
 
