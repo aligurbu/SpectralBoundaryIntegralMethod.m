@@ -197,9 +197,9 @@ if WritetoGIF
         end
     end
     %% Create animated GIF
-    imwrite(mov, map, 'isotropicTension.gif', 'DelayTime', 0, 'LoopCount', inf)
+    imwrite(mov, map, ['isotropicTension',name,'.gif'], 'DelayTime', 0, 'LoopCount', inf)
 else
-    v = VideoWriter('isotropicTension.mp4','MPEG-4');
+    v = VideoWriter(['isotropicTension',name,'.mp4'],'MPEG-4');
     v.FrameRate = 10;
     open(v);
 
