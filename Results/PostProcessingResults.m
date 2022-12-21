@@ -31,8 +31,19 @@ blackBackground = true; % if false then white background
 %% Visualization settings
 VisualizeSettings
 
-%% Post-processing the flow around the RBC motion
+%% Set-up the evaluation points
+evaluationPoitnsGridSize = sqrt(bParabolic);
+Xpoints = linspace(-1.5*evaluationPoitnsGridSize,1.5*evaluationPoitnsGridSize,45);
+Ypoints = linspace(-evaluationPoitnsGridSize,evaluationPoitnsGridSize,30);
+[EvaluationPtsX, EvaluationPtsY] = meshgrid(Xpoints, Ypoints);
+EvaluationPts = zeros(3, numel(EvaluationPtsX));
+EvaluationPts(1,:) = EvaluationPtsX(:)';
+EvaluationPts(2,:) = EvaluationPtsY(:)';
+numDofPerNode = size(EvaluationPts,1);
+numPoints = size(EvaluationPts,2);
 
+%% Post-processing the flow around the RBC motion
+PostProcessing_RBCMotion
 
 %%
 fclose('all');
