@@ -40,6 +40,8 @@ blackBackground = true; % if false then white background
 
 % CaptureFramesIsotropicMembraneTension
 
-VisualizeMembraneForceVectorField
+% VisualizeMembraneForceVectorField
+
+VisualizeMembraneVelocityVectorField
 
 fclose('all');
