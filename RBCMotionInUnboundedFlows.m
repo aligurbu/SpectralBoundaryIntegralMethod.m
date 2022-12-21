@@ -6,3 +6,6 @@ addpath(genpath('../SpectralBoundaryIntegralMethod.m'))
 
 %% Input the model and parameters for the analysis from Models folder
 LoadElasticRBC_Shear_N16
+
+%% Create grid for representation: [N+1 x 2*N+1]
+[nlat, nlon, thet, phi, weight] = GridOnSphere(N);
