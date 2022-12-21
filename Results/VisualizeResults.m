@@ -20,6 +20,9 @@ NSTEPS = length(Time);
 
 %%
 timeStepIncrement = 1;
+FRAMES = floor(linspace(1,NSTEPS,5));
+TimesOfFrames = Time(FRAMES)/RefShearRate % in seconds
+
 Rendering = 2; % This upsampling for the rendering purposes
 
 %% Choose a view angle
@@ -29,6 +32,8 @@ viewInd = [0 90];
 blackBackground = true; % if false then white background
 
 %% Run Visualize m-files one at a time.
-VisualizeMembraneShape
+% VisualizeMembraneShape
+
+CaptureFramesMembraneShape
 
 fclose('all');
