@@ -112,9 +112,9 @@ if WritetoGIF
         end
     end
     %% Create animated GIF
-    imwrite(mov, map, 'MembraneShape.gif', 'DelayTime', 0, 'LoopCount', inf)
+    imwrite(mov, map, ['MembraneShape',name,'.gif'], 'DelayTime', 0, 'LoopCount', inf)
 else % Write to MP4 file 
-    v = VideoWriter('MembraneShape.mp4','MPEG-4');
+    v = VideoWriter(['MembraneShape',name,'.mp4'],'MPEG-4');
     v.FrameRate = 10;
     open(v);
 
