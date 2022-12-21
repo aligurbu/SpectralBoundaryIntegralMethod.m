@@ -81,6 +81,17 @@ for nstep = 0:NSTEPS
             buinf = zeros(size(bxi));
         end
     end
+    %% Ambient parabolic velocity field
+    if ParabolicFlow
+        uinf = zeros(size(Xi));
+        uinf(:,:,1) = aParabolic*(bParabolic-(xi(:,:,2).^2 + xi(:,:,3).^2));
+        [auinf,buinf] = shagcm(uinf);
+        if Relaxation && nstep > RelaxationStep
+            uinf = zeros(size(Xi));
+            auinf = zeros(size(axi));
+            buinf = zeros(size(bxi));
+        end
+    end
 
 
 
