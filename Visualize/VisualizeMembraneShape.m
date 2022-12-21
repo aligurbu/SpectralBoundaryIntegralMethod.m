@@ -16,7 +16,7 @@ mask_b(1,:,:) = false;
 
 %%
 Numframe = 0;
-for nstep = 0:NSTEPS-1
+for nstep = 1:NSTEPS
     if (nstep~=0 && nstep~=NSTEPS-1 && mod(nstep,timeStepIncrement)~=0)
         continue
     end
@@ -28,7 +28,7 @@ Vertices = zeros((nlat+2)*nlon,3,Numframe);
 
 nframe = 0;
 T_step = zeros(Numframe,1);
-for nstep = 0:NSTEPS-1
+for nstep = 1:NSTEPS
     %% Read from file
     cxi = fread(fidCoord,3*(N+1)^2,'double');
     axi = zeros(size(mask_a));  bxi = zeros(size(mask_b));
@@ -39,7 +39,7 @@ for nstep = 0:NSTEPS-1
         continue
     end
     nframe = nframe + 1;
-    T_step(nframe) = Time(nstep+1);
+    T_step(nframe) = Time(nstep);
     
     %% Coordinates of vertices
     xi_equal = shsecm(axi,bxi);
