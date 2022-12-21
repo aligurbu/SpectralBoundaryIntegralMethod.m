@@ -5,6 +5,30 @@
 - This code was developed for part of [my dissertation](https://www.researchgate.net/publication/355033649_Simulations_of_Red_Blood_Cell_Flow_by_Boundary_Integral_Methods) to simulate red blood cell flow using boundary integral methods.
 - This repository contains the code for the concepts and examples presented in Chapter 4 for analyzing the red blood cell motion and deformation in an unbounded domain.
 
+## Numerical examples
+
+### Parabolic flow
+
+#### Membrane shape
+
+| In xy-axis | In 3D |
+| :-: | :-: |
+|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_3D.gif">|<img src="Results/LongConstrictedVessel_16El/LongConstrictedVessel_16El.png">|
+
+#### In-plane isotropic membrane tension
+
+| In xy-axis | In 3D |
+| :-: | :-: |
+|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_3D.gif">|<img src="Results/LongConstrictedVessel_16El/LongConstrictedVessel_16El.png">|
+
+#### Membrane forces
+
+<img src="Results/ElasticRBC_Parabolic_N16/MembraneForcesProfileElasticRBC_Parabolic_N16_xy.gif" width="600">
+
+#### Fluid flow field inside and outside of the red blood cell
+
+<video  src='Results/ElasticRBC_Parabolic_N16/PostProcessingElasticRBC_Parabolic_N16.mp4' width="600"></video>
+
 ## Citation
 
     @phdthesis{gurbuz2021Thesis,
