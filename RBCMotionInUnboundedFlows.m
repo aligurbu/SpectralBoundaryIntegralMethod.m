@@ -4,6 +4,8 @@
 clear all; close all; clc;
 addpath(genpath('../SpectralBoundaryIntegralMethod.m'))
 
+verbose_Plot = true;
+
 %% Input the model and parameters for the analysis from Models folder
 LoadElasticRBC_Shear_N16
 
@@ -23,3 +25,12 @@ Xi = getRBCInitialGeometry(thet,phi,InitXi,InitOrient);
 %% Compute the first and second fundamental form coefficients
 [~, ~, EE, FF, GG, WW, JXibrev, ~, ~, ~, LL, MM, NN] = ...
                    coefficientsOfFundamentalForm(aXi, bXi, UpSampleFactor);
+
+%% Check the geometry and position of RBC
+if verbose_Plot
+    figure('Color','white')
+    hold on
+    VisualizeGeometry(nlat, nlon, aXi, bXi, 'r', true)
+    axis on
+    xlabel('X'); ylabel('Y'); zlabel('Z');
+end
