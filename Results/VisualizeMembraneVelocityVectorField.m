@@ -146,9 +146,9 @@ if WritetoGIF
         %% Create a colormap for the first frame. For the rest of the frames,
         %% use the same colormap
         if id == 1
-            [mov(:,:,1,id), map] = rgb2ind(frame.cdata, 1024, 'nodither');
+            [mov(:,:,1,id), map] = rgb2ind(frame.cdata, 1024, 'dither');
         else
-            mov(:,:,1,id) = rgb2ind(frame.cdata, map, 'nodither');
+            mov(:,:,1,id) = rgb2ind(frame.cdata, map, 'dither');
         end
     end
     %% Create animated GIF
