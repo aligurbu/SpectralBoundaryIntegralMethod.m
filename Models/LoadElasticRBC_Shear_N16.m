@@ -49,3 +49,11 @@ InitOrient = expm(hat([0; 0; 0]*pi/2));
 
 %% The tolerance of the GMRES method
 ToleranceGMRES = 10^(-6);
+
+%% Time step
+%% Forward Euler
+TimeIncrement = 10^(-5); % s
+DT = TimeIncrement*RefShearRate;
+EndTime_ = 0.15; % s
+EndTime = EndTime_*RefShearRate;
+NSTEPS = ceil(EndTime/DT);
