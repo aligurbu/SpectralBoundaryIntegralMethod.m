@@ -69,7 +69,18 @@ for nstep = 0:NSTEPS
         fwrite(fidCoord, cxi, 'double');
     end
 
-
+    %% Ambient simple shear flow
+    if ShearFlow
+        uinf = zeros(size(Xi));
+        uinf(:,:,1) = ShearRate*xi(:,:,2); % Shear in y-direction
+%         uinf(:,:,1) = ShearRate*xi(:,:,3); % Shear in z-direction
+        [auinf,buinf] = shagcm(uinf);
+        if Relaxation && nstep > RelaxationStep
+            uinf = zeros(size(Xi));
+            auinf = zeros(size(axi));
+            buinf = zeros(size(bxi));
+        end
+    end
 
 
 
