@@ -3,3 +3,6 @@
 %%
 clear all; close all; clc;
 addpath(genpath('../SpectralBoundaryIntegralMethod.m'))
+
+%% Input the model and parameters for the analysis from Models folder
+LoadElasticRBC_Shear_N16
