@@ -66,3 +66,13 @@ ShearFlow = true;
 ShearRate_ = 123; % 1/s
 ShearRate = ShearRate_/RefShearRate;
 CapillaryNumberShear = ShearRate_ * mu_out * RefLength / ShearModulus;
+
+%% Parabolic flow to mimic Poiseuille flow in a vessel
+ParabolicFlow = false;
+aParabolic_ = 1/(RefLength/RefShearRate); % 1/(m.s)
+% For a vessel radius of 5*10^(-6) m 
+bParabolic_ = (5*10^(-6))^2; % m^2
+aParabolic = aParabolic_ * (RefLength/RefShearRate);
+bParabolic = bParabolic_ / RefLength^2;
+CapillaryNumberParabolic = mu_out * aParabolic_ * RefLength^4 / ...
+                                                            BendingModulus;
