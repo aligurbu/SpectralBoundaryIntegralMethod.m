@@ -1,5 +1,3 @@
-# Work in progress
-
 # SpectralBoundaryIntegralMethod.m: Spectral boundary integral method code
 
 - This code was developed for part of [my dissertation](https://www.researchgate.net/publication/355033649_Simulations_of_Red_Blood_Cell_Flow_by_Boundary_Integral_Methods) to simulate red blood cell flow using boundary integral methods.
@@ -25,7 +23,7 @@
 
 <img src="Results/ElasticRBC_Parabolic_N16/MembraneForcesProfileElasticRBC_Parabolic_N16_xy.gif" width="600">
 
-#### Fluid flow field inside and outside of the red blood cell
+#### The fluid flow field inside and outside of the red blood cell
 
 https://user-images.githubusercontent.com/13091572/209022041-c561f04c-ca31-4d72-a89f-f6524374c075.mp4
 
