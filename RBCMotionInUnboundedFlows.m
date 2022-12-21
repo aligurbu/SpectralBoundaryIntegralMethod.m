@@ -19,3 +19,7 @@ Xi = getRBCInitialGeometry(thet,phi,InitXi,InitOrient);
 %% Initial conditions:
 %% spherical harmonics coefficients of the undeformed RBC coordinates
 [aXi,bXi] = shagcm(Xi);
+
+%% Compute the first and second fundamental form coefficients
+[~, ~, EE, FF, GG, WW, JXibrev, ~, ~, ~, LL, MM, NN] = ...
+                   coefficientsOfFundamentalForm(aXi, bXi, UpSampleFactor);
