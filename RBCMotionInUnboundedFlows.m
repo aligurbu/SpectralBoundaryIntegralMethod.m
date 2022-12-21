@@ -93,7 +93,6 @@ for nstep = 0:1%NSTEPS
         end
     end
 
-
     %% Compute membrane traction
     [f, viscousStress_prev, epsilbrev_prev] = ...
                            MembraneForces(EE, FF, GG, WW, JXibrev, ...
