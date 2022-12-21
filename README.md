@@ -27,7 +27,7 @@
 
 #### Fluid flow field inside and outside of the red blood cell
 
-<video  src='Results/ElasticRBC_Parabolic_N16/PostProcessingElasticRBC_Parabolic_N16.mp4' width="600"></video>
+<video  src="https://github.com/aligurbu/SpectralBoundaryIntegralMethod.m/blob/main/Results/ElasticRBC_Parabolic_N16/PostProcessingElasticRBC_Parabolic_N16.mp4"></video>
 
 ## Citation
 
