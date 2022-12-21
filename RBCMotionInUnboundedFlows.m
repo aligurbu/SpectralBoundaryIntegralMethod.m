@@ -5,6 +5,7 @@ clear all; close all; clc;
 addpath(genpath('../SpectralBoundaryIntegralMethod.m'))
 
 verbose_Plot = false;
+Starttime = tic;
 
 %% Input the model and parameters for the analysis from Models folder
 LoadElasticRBC_Shear_N16
@@ -57,3 +58,66 @@ xi = Xi; axi = aXi; bxi = bXi;
 
 viscousStress_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
 epsilbrev_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
+
+%% Time-stepping
+for nstep = 0:NSTEPS
+    if (nstep==0 || mod(nstep,SaveAtIncrementalSteps)==0)
+        %% Write the time to file
+        fwrite(fidTime, Time, 'double');
+        %% Write the position of cell to file
+        cxi = [axi(mask_a); bxi(mask_b)];
+        fwrite(fidCoord, cxi, 'double');
+    end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end
+fclose('all');
+RunTimeInHours = toc(Starttime)/60/60
