@@ -46,3 +46,6 @@ NGSphere = 2*N; % Quadrature on sphere parameter
 %% Initial position and orientation
 InitXi = [0; 0; 0];
 InitOrient = expm(hat([0; 0; 0]*pi/2));
+
+%% The tolerance of the GMRES method
+ToleranceGMRES = 10^(-6);
