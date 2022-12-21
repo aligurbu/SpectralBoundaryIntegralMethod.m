@@ -58,6 +58,8 @@ EndTime_ = 0.15; % s
 EndTime = EndTime_*RefShearRate;
 NSTEPS = ceil(EndTime/DT);
 
+SaveAtIncrementalSteps = 50; % Save the data at the increment of this steps
+
 %% Ambient flow field
 %% Simple shear flow
 ShearFlow = true;
