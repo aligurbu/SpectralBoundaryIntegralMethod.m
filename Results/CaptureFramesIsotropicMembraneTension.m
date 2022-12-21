@@ -135,7 +135,7 @@ for kk = 1:nframe
         set(gcf,'Color','white'); 
         set(gcf,'PaperPositionMode','auto')
         exportgraphics(gca,['Frame_',sprintf('%d',kk), ...
-                            '_isotropicTension.png']);
+                            '_isotropicTension',name,'.png']);
     end
 end
 fig = figure(kk+1);
@@ -158,5 +158,5 @@ if verbose_Plot
     set(gcf, 'InvertHardCopy', 'off'); 
     set(gcf,'Color','white'); 
     set(gcf,'PaperPositionMode','auto')
-    exportgraphics(gca,'ColorBar_isotropicTension.png');
+    exportgraphics(gca,['ColorBar_isotropicTension',name,'.png']);
 end
