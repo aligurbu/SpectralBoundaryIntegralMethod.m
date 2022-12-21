@@ -76,3 +76,7 @@ aParabolic = aParabolic_ * (RefLength/RefShearRate);
 bParabolic = bParabolic_ / RefLength^2;
 CapillaryNumberParabolic = mu_out * aParabolic_ * RefLength^4 / ...
                                                             BendingModulus;
+
+%% Relaxation 
+Relaxation = false;
+RelaxationStep = NSTEPS; % relative to end time
