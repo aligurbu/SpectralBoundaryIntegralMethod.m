@@ -119,9 +119,13 @@ for nstep = 0:1%NSTEPS
                                             nlat, nlon, mask_a, mask_b, ...
                                             mu, lam, N, ToleranceGMRES, ...
                                             cu);
-
-
-
+    if (nstep==0 || mod(nstep,SaveAtIncrementalSteps)==0)
+        %% Write output to file
+        writef = f(:)';
+        fwrite(fidMemFor,writef,'double');
+        writecu = cu';
+        fwrite(fidSol,writecu,'double');
+    end
 
 
 
