@@ -23,6 +23,10 @@ epsilbrev_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
 ErrMemForce = zeros(Numframe,1);
 ErrMemMomentForce = zeros(Numframe,1);
 
+Volume = zeros(Numframe,1);
+Area = zeros(Numframe,1);
+IntegralVelocityTimesNormal = zeros(Numframe,1);
+
 nframe = 0;
 T_step = zeros(Numframe,1);
 for nstep = 0:NSTEPS-1
@@ -48,9 +52,20 @@ for nstep = 0:NSTEPS-1
     u = shsgcm(au, bu);
 
     %%
-    [F, M, IntnormF, IntnormM] = integrateForce(axi, bxi, f);
-    ErrMemForce(nframe) = (norm(F)/IntnormF)*100;
-    ErrMemMomentForce(nframe) = (norm(M)/IntnormM)*100;
+    [F, M, IntegralnormF, IntegralnormM] = integrateForce(axi, bxi, f);
+    ErrMemForce(nframe) = (norm(F)/IntegralnormF)*100;
+    ErrMemMomentForce(nframe) = (norm(M)/IntegralnormM)*100;
+
+    [Volume(nframe), Area(nframe), IntegralVelocityTimesNormal(nframe)] = ...
+                                                getVolumeArea(axi, bxi, u);
 end
 %% Dimensionalization
 T_step = T_step/RefShearRate; % in seconds
+Area = Area*(RefLength*10^(6))^2; % \mum^2
+Volume = Volume*(RefLength*10^(6))^3; % \mum^3
+ErrorVolume = max(abs(Volume(1)-max(Volume))/(Volume(1)), ...
+                  abs(Volume(1)-min(Volume))/(Volume(1)))*100
+ErrorArea = max(abs(Area(1)-max(Area))/(Area(1)), ...
+               abs(Area(1)-min(Area))/(Area(1)))*100
+IntegralVelocityTimesNormal = ...
+  IntegralVelocityTimesNormal*(RefLength*10^(6))^3*RefShearRate; % \mum^3/s
