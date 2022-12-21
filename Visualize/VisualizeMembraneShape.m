@@ -17,7 +17,7 @@ mask_b(1,:,:) = false;
 %%
 Numframe = 0;
 for nstep = 1:NSTEPS
-    if (nstep~=0 && nstep~=NSTEPS-1 && mod(nstep,timeStepIncrement)~=0)
+    if (nstep~=1 && nstep~=NSTEPS && mod(nstep,timeStepIncrement)~=0)
         continue
     end
     Numframe = Numframe + 1;
@@ -35,7 +35,7 @@ for nstep = 1:NSTEPS
     axi(mask_a) = cxi(1:3*(N+1)*(N+2)/2);
     bxi(mask_b) = cxi(3*(N+1)*(N+2)/2+1:3*(N+1)^2);
 
-    if (nstep~=0 && nstep~=NSTEPS-1 && mod(nstep,timeStepIncrement)~=0)
+    if (nstep~=1 && nstep~=NSTEPS && mod(nstep,timeStepIncrement)~=0)
         continue
     end
     nframe = nframe + 1;
