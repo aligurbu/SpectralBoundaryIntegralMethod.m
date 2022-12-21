@@ -146,7 +146,8 @@ for nstep = 0:1%NSTEPS
     end
     [axi,bxi] = shagcm(xi);
 
-
+    %% Update current time
+    Time = Time + DT;
 
 
 
