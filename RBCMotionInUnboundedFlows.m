@@ -9,3 +9,6 @@ LoadElasticRBC_Shear_N16
 
 %% Create grid for representation: [N+1 x 2*N+1]
 [nlat, nlon, thet, phi, weight] = GridOnSphere(N);
+
+%% Create grid for integration points on unit sphere:
+[NGthet, NGphi, eta, wg] = setup_integration_grid(N, NGSphere);
