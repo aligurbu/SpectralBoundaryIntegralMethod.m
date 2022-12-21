@@ -157,38 +157,16 @@ for nstep = 0:1%NSTEPS
                                              stableCounter, maxStableDT, ...
                                              nstep);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    %% Return if time is larger than the final time
+    if Time - DT > EndTime
+        load handel
+        sound(y,Fs)
+        fclose('all');
+        TimeInHours = toc(Starttime)/60/60 % in hours
+        return
+    end
 end
+load handel
+sound(y,Fs)
 fclose('all');
 RunTimeInHours = toc(Starttime)/60/60
