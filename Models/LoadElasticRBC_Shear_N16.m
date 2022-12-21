@@ -32,3 +32,8 @@ ArtificialSpring = 100/3 * ShearModulus; % N/m
 % ArtificialSpring = 6*ShearModulus; % N/m 
 RelaxationTime = mu_Membrane / ArtificialSpring; % s 
 Tau = RelaxationTime*RefShearRate; % the relaxation time of the Maxwell element
+
+%% Constitutive equations for membrane mechanics
+StVenantKirchhoff = false;
+NeoHookean = false;
+Skalak = true;
