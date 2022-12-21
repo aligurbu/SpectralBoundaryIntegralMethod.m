@@ -57,3 +57,10 @@ DT = TimeIncrement*RefShearRate;
 EndTime_ = 0.15; % s
 EndTime = EndTime_*RefShearRate;
 NSTEPS = ceil(EndTime/DT);
+
+%% Ambient flow field
+%% Simple shear flow
+ShearFlow = true;
+ShearRate_ = 123; % 1/s
+ShearRate = ShearRate_/RefShearRate;
+CapillaryNumberShear = ShearRate_ * mu_out * RefLength / ShearModulus;
