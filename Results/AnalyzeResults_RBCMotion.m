@@ -25,7 +25,11 @@ ErrMemMomentForce = zeros(Numframe,1);
 
 Volume = zeros(Numframe,1);
 Area = zeros(Numframe,1);
-IntegralVelocityTimesNormal = zeros(Numframe,1);
+
+dA = zeros(Numframe,1);
+dB = zeros(Numframe,1);
+dC = zeros(Numframe,1);
+DeformationIndex = zeros(Numframe,1);
 
 nframe = 0;
 T_step = zeros(Numframe,1);
@@ -51,13 +55,15 @@ for nstep = 0:NSTEPS-1
     au(mask_a) = aU; bu(mask_b) = bU;
     u = shsgcm(au, bu);
 
-    %%
     [F, M, IntegralnormF, IntegralnormM] = integrateForce(axi, bxi, f);
     ErrMemForce(nframe) = (norm(F)/IntegralnormF)*100;
     ErrMemMomentForce(nframe) = (norm(M)/IntegralnormM)*100;
 
     [Volume(nframe), Area(nframe)] = getVolumeArea(axi, bxi);
 
+    [dA(nframe), dB(nframe), dC(nframe)] = getDeformationIndex(axi, bxi);
+    DeformationIndex(nframe) = ((dA(nframe)/dA(1)) - (dB(nframe)/dB(1))) / ...
+                               ((dA(nframe)/dA(1)) + (dB(nframe)/dB(1)));
 end
 %% Dimensionalization
 T_step = T_step/RefShearRate; % in seconds
@@ -67,3 +73,7 @@ ErrorVolume = max(abs(Volume(1)-max(Volume))/(Volume(1)), ...
                   abs(Volume(1)-min(Volume))/(Volume(1)))*100
 ErrorArea = max(abs(Area(1)-max(Area))/(Area(1)), ...
                abs(Area(1)-min(Area))/(Area(1)))*100
+
+dA = dA * (RefLength*10^(6)); % \mum
+dB = dB * (RefLength*10^(6)); % \mum
+dC = dC * (RefLength*10^(6)); % \mum
