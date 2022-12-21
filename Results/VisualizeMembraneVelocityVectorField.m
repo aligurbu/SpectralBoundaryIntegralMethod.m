@@ -102,6 +102,7 @@ h = patch(CellX(:,:,1),CellY(:,:,1),CellZ(:,:,1),'r');
 alpha(h, TransparencyInd) % to set transparency
 % set(h, 'linestyle', 'none') % no lines showning element edges
 set(gca,'FontName','cambria math','FontSize',12)
+camlight
 material Dull
 axis off
 view(viewInd)
@@ -152,9 +153,9 @@ if WritetoGIF
         end
     end
     %% Create animated GIF
-    imwrite(mov, map, 'MembraneVelocityProfile.gif', 'DelayTime', 0, 'LoopCount', inf)
+    imwrite(mov, map, ['MembraneVelocityProfile',name,'.gif'], 'DelayTime', 0, 'LoopCount', inf)
 else % Write to MP4 file
-    v = VideoWriter('MembraneVelocityProfile.mp4','MPEG-4');
+    v = VideoWriter(['MembraneVelocityProfile',name,'.mp4'],'MPEG-4');
     v.FrameRate = 10;
     open(v);
 
