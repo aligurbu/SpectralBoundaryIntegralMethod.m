@@ -12,3 +12,6 @@ LoadElasticRBC_Shear_N16
 
 %% Create grid for integration points on unit sphere:
 [NGthet, NGphi, eta, wg] = setup_integration_grid(N, NGSphere);
+
+%% Create geometry of RBC: undeformed geometry of an RBC
+Xi = getRBCInitialGeometry(thet,phi,InitXi,InitOrient);
