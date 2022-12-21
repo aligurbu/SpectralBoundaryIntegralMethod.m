@@ -87,10 +87,10 @@ else
     ColorInd = 'black';
 end
 hold on
-scr_siz = get(0,'ScreenSize');
-scr_siz([1 2]) = scr_siz([1 2]) + 100;
-scr_siz([3 4]) = scr_siz([3 4]) - 200;
-set(gcf, 'Position',  scr_siz)
+% scr_siz = get(0,'ScreenSize');
+% scr_siz([1 2]) = scr_siz([1 2]) + 100;
+% scr_siz([3 4]) = scr_siz([3 4]) - 200;
+% set(gcf, 'Position',  scr_siz)
 
 p = scatter3(reshape(xi_GaussX(:,:,1),nlat*nlon,1), ...
              reshape(xi_GaussY(:,:,1),nlat*nlon,1), ...
@@ -102,7 +102,7 @@ h = patch(CellX(:,:,1),CellY(:,:,1),CellZ(:,:,1),'r');
 alpha(h, TransparencyInd) % to set transparency
 % set(h, 'linestyle', 'none') % no lines showning element edges
 set(gca,'FontName','cambria math','FontSize',12)
-camlight
+% camlight
 material Dull
 axis off
 view(viewInd)
