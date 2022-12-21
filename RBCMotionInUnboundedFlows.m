@@ -9,6 +9,9 @@ Starttime = tic;
 
 %% Input the model and parameters for the analysis from Models folder
 LoadElasticRBC_Shear_N16
+% LoadElasticRBC_Parabolic_N16
+% LoadMemViscosityRBC_Shear_N16
+% LoadMemViscosityRBC_Parabolic_N16
 
 %% Create grid for representation: [N+1 x 2*N+1]
 [nlat, nlon, thet, phi, weight] = GridOnSphere(N);
@@ -60,7 +63,7 @@ viscousStress_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
 epsilbrev_prev = zeros(UpSampleFactor*N+1, 2*UpSampleFactor*N+1, 4);
 
 %% Time-stepping
-for nstep = 0:1%NSTEPS
+for nstep = 0:NSTEPS
     if (nstep==0 || mod(nstep,SaveAtIncrementalSteps)==0)
         %% Write the time to file
         fwrite(fidTime, Time, 'double');
@@ -125,6 +128,19 @@ for nstep = 0:1%NSTEPS
         writecu = cu';
         fwrite(fidSol,writecu,'double');
     end
+
+    %% Display
+    f_norm = sqrt(f(:,:,1).^2+f(:,:,2).^2+f(:,:,3).^2);
+    u_norm = sqrt(u(:,:,1).^2+u(:,:,2).^2+u(:,:,3).^2);
+
+    fprintf('# of step %d;\t remaining # of steps %d; \n', ...
+             nstep, NSTEPS-nstep)
+    fprintf('normf = %g;\t normu = %g\n', max(max(f_norm)),max(max(u_norm)))
+    fprintf('DT: %g;\t Time %d \n', DT, Time);
+    fprintf('# of iteration GMRES %d\n', ITER(2))
+    fprintf('# of stableCounter %d\n', stableCounter)
+    fprintf('# of counterTime %d\n', counterTime)
+    fprintf('\n')
 
 	%% Update state (Forward Euler time scheme)
     axi = axi + DT*au;
