@@ -273,7 +273,7 @@ axis off
 box off
 
 %
-v = VideoWriter('PostProcessing.mp4','MPEG-4');
+v = VideoWriter(['PostProcessing',name,'.mp4'],'MPEG-4');
 v.FrameRate = 10;
 open(v);
 
