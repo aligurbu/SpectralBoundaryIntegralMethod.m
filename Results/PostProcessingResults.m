@@ -21,7 +21,7 @@ Time = fread(fidTime,'double');
 NSTEPS = length(Time);
 
 %%
-timeStepIncrement = 1;
+timeStepIncrement = 2;
 
 %% Choose a view angle
 viewInd = [0 90];
