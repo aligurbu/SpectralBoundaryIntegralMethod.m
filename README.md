@@ -25,7 +25,7 @@
 
 |Membrane forces | The fluid flow field inside and outside of the red blood cell|
 | :-: | :-: |
-|<img src="Results/ElasticRBC_Shear_N16/MembraneForcesProfileElasticRBC_Shear_N16_xy.gif" width="500">|<video src="https://user-images.githubusercontent.com/13091572/209028388-9f9fb88d-4f5b-4100-90b3-717cebe39da9.mp4" width="600" >|
+|<img src="Results/ElasticRBC_Shear_N16/MembraneForcesProfileElasticRBC_Shear_N16_xy.gif" width="500">|<video src="https://user-images.githubusercontent.com/13091572/209028388-9f9fb88d-4f5b-4100-90b3-717cebe39da9.mp4" width="500" >|
 
 ### Parabolic flow
 
