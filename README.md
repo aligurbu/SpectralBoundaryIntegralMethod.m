@@ -21,13 +21,11 @@
 | :-: | :-: |
 |<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_xy.gif">|<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_3D.gif">|
 
-#### Membrane forces
+#### Membrane forces and the fluid flow field inside and outside of the red blood cell
 
-<img src="Results/ElasticRBC_Shear_N16/MembraneForcesProfileElasticRBC_Shear_N16_xy.gif" width="600">
-
-#### The fluid flow field inside and outside of the red blood cell
-
-https://user-images.githubusercontent.com/13091572/209028388-9f9fb88d-4f5b-4100-90b3-717cebe39da9.mp4
+|Membrane forces | The fluid flow field inside and outside of the red blood cell|
+| :-: | :-: |
+|<img src="Results/ElasticRBC_Shear_N16/MembraneForcesProfileElasticRBC_Shear_N16_xy.gif" width="500">|<video src="https://user-images.githubusercontent.com/13091572/209028388-9f9fb88d-4f5b-4100-90b3-717cebe39da9.mp4" width="600" >|
 
 ### Parabolic flow
 
