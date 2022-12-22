@@ -41,13 +41,11 @@
 | :-: | :-: |
 |<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_3D.gif">|
 
-#### Membrane forces
+#### Membrane forces and the fluid flow field inside and outside of the red blood cell
 
-<img src="Results/ElasticRBC_Parabolic_N16/MembraneForcesProfileElasticRBC_Parabolic_N16_xy.gif" width="600">
-
-#### The fluid flow field inside and outside of the red blood cell
-
-https://user-images.githubusercontent.com/13091572/209022041-c561f04c-ca31-4d72-a89f-f6524374c075.mp4
+|Membrane forces | The fluid flow field inside and outside of the red blood cell|
+| :-: | :-: |
+|<img src="Results/ElasticRBC_Parabolic_N16/MembraneForcesProfileElasticRBC_Parabolic_N16_xy.gif" width="500">|<video src="https://user-images.githubusercontent.com/13091572/209022041-c561f04c-ca31-4d72-a89f-f6524374c075.mp4" width="600" >|
 
 ## Viscoelastic membrane model
 
@@ -65,13 +63,11 @@ https://user-images.githubusercontent.com/13091572/209022041-c561f04c-ca31-4d72-
 | :-: | :-: |
 |<img src="Results/MemViscosityRBC_Parabolic_N16/isotropicTensionMemViscosityRBC_Parabolic_N16_xy.gif">|<img src="Results/MemViscosityRBC_Parabolic_N16/isotropicTensionMemViscosityRBC_Parabolic_N16_3D.gif">|
 
-#### Membrane forces
+#### Membrane forces and the fluid flow field inside and outside of the red blood cell
 
-<img src="Results/MemViscosityRBC_Parabolic_N16/MembraneForcesProfileMemViscosityRBC_Parabolic_N16_xy.gif" width="600">
-
-#### The fluid flow field inside and outside of the red blood cell
-
-https://user-images.githubusercontent.com/13091572/209037857-2d97b21f-55fd-42d1-8d96-dc1168a5cae4.mp4
+|Membrane forces | The fluid flow field inside and outside of the red blood cell|
+| :-: | :-: |
+|<img src="Results/MemViscosityRBC_Parabolic_N16/MembraneForcesProfileMemViscosityRBC_Parabolic_N16_xy.gif" width="500">|<video src="https://user-images.githubusercontent.com/13091572/209037857-2d97b21f-55fd-42d1-8d96-dc1168a5cae4.mp4" width="600" >|
 
 ## Citation
 
