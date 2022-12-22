@@ -13,13 +13,13 @@
 
 | In xy-axis | In 3D |
 | :-: | :-: |
-|<img src="Results/ElasticRBC_Shear_N16/MembraneShapeElasticRBC_Shear_N16_xy.gif">|<img src="Results/ElasticRBC_Shear_N16/MembraneShapeElasticRBC_Shear_N16_3D.gif">|<img src="Results/LongConstrictedVessel_16El/LongConstrictedVessel_16El.png">|
+|<img src="Results/ElasticRBC_Shear_N16/MembraneShapeElasticRBC_Shear_N16_xy.gif">|<img src="Results/ElasticRBC_Shear_N16/MembraneShapeElasticRBC_Shear_N16_3D.gif">|
 
 #### In-plane isotropic membrane tension
 
 | In xy-axis | In 3D |
 | :-: | :-: |
-|<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_xy.gif">|<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_3D.gif">|<img src="Results/LongConstrictedVessel_16El/LongConstrictedVessel_16El.png">|
+|<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_xy.gif">|<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_3D.gif">|
 
 #### Membrane forces
 
@@ -35,13 +35,13 @@ https://user-images.githubusercontent.com/13091572/209028388-9f9fb88d-4f5b-4100-
 
 | In xy-axis | In 3D |
 | :-: | :-: |
-|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_3D.gif">|<img src="Results/LongConstrictedVessel_16El/LongConstrictedVessel_16El.png">|
+|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_3D.gif">|
 
 #### In-plane isotropic membrane tension
 
 | In xy-axis | In 3D |
 | :-: | :-: |
-|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_3D.gif">|<img src="Results/LongConstrictedVessel_16El/LongConstrictedVessel_16El.png">|
+|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_3D.gif">|
 
 #### Membrane forces
 
@@ -50,6 +50,29 @@ https://user-images.githubusercontent.com/13091572/209028388-9f9fb88d-4f5b-4100-
 #### The fluid flow field inside and outside of the red blood cell
 
 https://user-images.githubusercontent.com/13091572/209022041-c561f04c-ca31-4d72-a89f-f6524374c075.mp4
+
+## Viscoelastic membrane model
+
+### Parabolic flow
+
+#### Membrane shape
+
+| In xy-axis | In 3D |
+| :-: | :-: |
+|<img src="Results/MemViscosityRBC_Parabolic_N16/MembraneShapeMemViscosityRBC_Parabolic_N16_xy.gif">|<img src="Results/MemViscosityRBC_Parabolic_N16/MembraneShapeMemViscosityRBC_Parabolic_N16_3D.gif">|
+
+#### In-plane isotropic membrane tension
+
+| In xy-axis | In 3D |
+| :-: | :-: |
+|<img src="Results/MemViscosityRBC_Parabolic_N16/isotropicTensionMemViscosityRBC_Parabolic_N16_xy.gif">|<img src="Results/MemViscosityRBC_Parabolic_N16/isotropicTensionMemViscosityRBC_Parabolic_N16_3D.gif">|
+
+#### Membrane forces
+
+<img src="Results/MemViscosityRBC_Parabolic_N16/MembraneForcesProfileMemViscosityRBC_Parabolic_N16_xy.gif" width="600">
+
+#### The fluid flow field inside and outside of the red blood cell
+
 
 ## Citation
 
