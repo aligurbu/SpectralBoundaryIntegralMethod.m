@@ -73,7 +73,7 @@ https://user-images.githubusercontent.com/13091572/209022041-c561f04c-ca31-4d72-
 
 #### The fluid flow field inside and outside of the red blood cell
 
-https://user-images.githubusercontent.com/13091572/209033331-72b97fc9-8690-41ad-a169-93a6853d617c.mp4
+https://user-images.githubusercontent.com/13091572/209037857-2d97b21f-55fd-42d1-8d96-dc1168a5cae4.mp4
 
 ## Citation
 
