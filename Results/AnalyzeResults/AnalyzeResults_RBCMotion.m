@@ -9,8 +9,8 @@ mask_b(1,:,:) = false;
 
 %%
 Numframe = 0;
-for nstep = 0:NSTEPS-1
-    if (nstep~=0 && nstep~=NSTEPS-1 && mod(nstep,timeStepIncrement)~=0)
+for nstep = 1:NSTEPS
+    if (nstep~=1 && nstep~=NSTEPS && mod(nstep,timeStepIncrement)~=0)
         continue
     end
     Numframe = Numframe + 1;
@@ -30,7 +30,7 @@ DeformationIndex = zeros(Numframe,1);
 
 nframe = 0;
 T_step = zeros(Numframe,1);
-for nstep = 0:NSTEPS-1
+for nstep = 1:NSTEPS
     %% Read from file
     cxi = fread(fidCoord,3*(N+1)^2,'double');
     axi = zeros(size(mask_a));  bxi = zeros(size(mask_b));
@@ -42,11 +42,11 @@ for nstep = 0:NSTEPS-1
     aU = fread(fidSol,3*(N+1)*(N+2)/2,'double');
     bU = fread(fidSol,3*N*(N+1)/2,'double');
 
-    if (nstep~=0 && nstep~=NSTEPS-1 && mod(nstep,timeStepIncrement)~=0)
+    if (nstep~=1 && nstep~=NSTEPS && mod(nstep,timeStepIncrement)~=0)
         continue
     end
     nframe = nframe + 1;
-    T_step(nframe) = Time(nstep+1);
+    T_step(nframe) = Time(nstep);
 
     au = zeros(size(mask_a)); bu = zeros(size(mask_b));
     au(mask_a) = aU; bu(mask_b) = bU;
