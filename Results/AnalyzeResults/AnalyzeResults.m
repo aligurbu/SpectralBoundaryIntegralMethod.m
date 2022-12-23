@@ -1,6 +1,6 @@
 %% Analyze the results
 clear all; close all; clc;
-addpath(genpath('../../SpectralBoundaryIntegralMethod.m'))
+addpath(genpath('../../../SpectralBoundaryIntegralMethod.m'))
 verbose_Plot = false;
 
 %% Input the model and parameters for the analysis from Models folder

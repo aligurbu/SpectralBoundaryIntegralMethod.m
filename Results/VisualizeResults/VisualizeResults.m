@@ -1,6 +1,6 @@
 %% Visualize the results
 clear all; close all; clc;
-addpath(genpath('../../SpectralBoundaryIntegralMethod.m'))
+addpath(genpath('../../../SpectralBoundaryIntegralMethod.m'))
 verbose_Plot = false;
 WritetoGIF = true; % if false then save as MPEG-4
 
