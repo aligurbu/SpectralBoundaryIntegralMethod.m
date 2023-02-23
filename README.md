@@ -114,13 +114,13 @@
         school={State University of New York at Buffalo}
     }
     
-    @software{StokesFlowInRigidTube_m,
+    @software{SpectralBoundaryIntegralMethod_m,
       author       = {Ali G\"urb\"uz},
-      title        = {StokesFlowInRigidTube.m},
+      title        = {SpectralBoundaryIntegralMethod.m},
       month        = Feb,
       year         = 2023,
       publisher    = {Zenodo},
       version      = {v1.1},
-      doi          = {10.5281/zenodo.7668470},
-      url          = {https://doi.org/10.5281/zenodo.7668470}
+      doi          = {10.5281/zenodo.7668525},
+      url          = {https://doi.org/10.5281/zenodo.7668525}
     }
