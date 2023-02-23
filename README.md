@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7668470.svg)](https://doi.org/10.5281/zenodo.7668470)
+[![DOI](https://zenodo.org/badge/580601900.svg)](https://zenodo.org/badge/latestdoi/580601900)
 
 # SpectralBoundaryIntegralMethod.m: Spectral boundary integral method code
 
