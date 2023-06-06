@@ -17,6 +17,8 @@
 
 #### Membrane shape
 
+Click on the following picture to watch the simulation of red blood cell deformation in shear flow with a purely elastic membrane model.
+
 [![Video](https://img.youtube.com/vi/w_5CqQsjlxM/maxresdefault.jpg)](https://www.youtube.com/watch?v=w_5CqQsjlxM)
 
 #### In-plane isotropic membrane tension
