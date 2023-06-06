@@ -17,9 +17,7 @@
 
 #### Membrane shape
 
-| In xy-axis | In 3D |
-| :-: | :-: |
-|<img src="Results/ElasticRBC_Shear_N16/MembraneShapeElasticRBC_Shear_N16_xy.gif">|<img src="Results/ElasticRBC_Shear_N16/MembraneShapeElasticRBC_Shear_N16_3D.gif">|
+[![Video](https://img.youtube.com/vi/w_5CqQsjlxM/maxresdefault.jpg)](https://www.youtube.com/watch?v=w_5CqQsjlxM)
 
 #### In-plane isotropic membrane tension
 
