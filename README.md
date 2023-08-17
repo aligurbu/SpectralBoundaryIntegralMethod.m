@@ -39,9 +39,9 @@ Click on the following picture to watch the simulation of red blood cell deforma
 
 #### Membrane shape
 
-| In xy-axis | In 3D |
-| :-: | :-: |
-|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/MembraneShapeElasticRBC_Parabolic_N16_3D.gif">|
+Click on the following picture to watch the simulation of red blood cell deformation in parabolic flow with a purely elastic membrane model.
+
+[![Video](https://img.youtube.com/vi/OSZr69uMuz8/maxresdefault.jpg)](https://www.youtube.com/watch?v=OSZr69uMuz8)
 
 #### In-plane isotropic membrane tension
 
