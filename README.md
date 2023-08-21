@@ -65,9 +65,9 @@ Click on the following picture to watch the simulation of red blood cell deforma
 
 #### Membrane shape
 
-| In xy-axis | In 3D |
-| :-: | :-: |
-|<img src="Results/MemViscosityRBC_Shear_N16/MembraneShapeMemViscosityRBC_Shear_N16_xy.gif">|<img src="Results/MemViscosityRBC_Shear_N16/MembraneShapeMemViscosityRBC_Shear_N16_3D.gif">|
+Click on the following picture to watch the simulation of red blood cell deformation in shear flow with a viscoelastic membrane model.
+
+[![Video](https://img.youtube.com/vi/k6qviRGyb-k/maxresdefault.jpg)](https://www.youtube.com/watch?v=k6qviRGyb-k)
 
 #### In-plane isotropic membrane tension
 
