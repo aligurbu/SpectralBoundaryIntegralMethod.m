@@ -23,9 +23,9 @@ Click on the following picture to watch the simulation of red blood cell deforma
 
 #### In-plane isotropic membrane tension
 
-| In xy-axis | In 3D |
-| :-: | :-: |
-|<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_xy.gif">|<img src="Results/ElasticRBC_Shear_N16/isotropicTensionElasticRBC_Shear_N16_3D.gif">|
+Click on the image below to watch a video demonstrating how the tension in a red blood cell's membrane varies while flowing in a shear flow with a purely elastic membrane.
+
+[![Video](https://img.youtube.com/vi/BUEJtE-vI2Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=BUEJtE-vI2Y)
 
 #### Membrane forces and the fluid flow field inside and outside of the red blood cell
 
@@ -45,9 +45,9 @@ Click on the following picture to watch the simulation of red blood cell deforma
 
 #### In-plane isotropic membrane tension
 
-| In xy-axis | In 3D |
-| :-: | :-: |
-|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_xy.gif">|<img src="Results/ElasticRBC_Parabolic_N16/isotropicTensionElasticRBC_Parabolic_N16_3D.gif">|
+Click on the image below to watch a video demonstrating how the tension in a red blood cell's membrane varies while flowing in a parabolic flow with a purely elastic membrane.
+
+[![Video](https://img.youtube.com/vi/K_WhBSuUISE/maxresdefault.jpg)](https://www.youtube.com/watch?v=K_WhBSuUISE)
 
 #### Membrane forces and the fluid flow field inside and outside of the red blood cell
 
