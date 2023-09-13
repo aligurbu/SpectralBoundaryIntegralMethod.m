@@ -75,11 +75,11 @@ Click on the image below to watch a video demonstrating how the tension in a red
 
 [![Video](https://img.youtube.com/vi/hQipE262_VA/maxresdefault.jpg)](https://www.youtube.com/watch?v=hQipE262_VA)
 
-#### Membrane forces and the fluid flow field inside and outside of the red blood cell
+#### Fluid flow field inside and outside of a red blood cell
 
-|Membrane forces | The fluid flow field inside and outside of the red blood cell|
-| :-: | :-: |
-|<img src="Results/MemViscosityRBC_Shear_N16/MembraneForcesProfileMemViscosityRBC_Shear_N16_xy.gif">|<video src="https://user-images.githubusercontent.com/13091572/209063703-8fa09fb1-42ff-4e24-94c9-ef068381d145.mp4">|
+Click on the image below to watch a video illustrating the flow field around a red blood cell while flowing in a shear flow with a viscoelastic membrane model.
+
+[![Video](https://img.youtube.com/vi/a0JzfOeJ_J4/maxresdefault.jpg)](https://www.youtube.com/watch?v=a0JzfOeJ_J4)
 
 ---
 
@@ -97,11 +97,11 @@ Click on the image below to watch a video demonstrating how the tension in a red
 
 [![Video](https://img.youtube.com/vi/TSEQkKWU254/maxresdefault.jpg)](https://www.youtube.com/watch?v=TSEQkKWU254)
 
-#### Membrane forces and the fluid flow field inside and outside of the red blood cell
+#### Fluid flow field inside and outside of a red blood cell
 
-|Membrane forces | The fluid flow field inside and outside of the red blood cell|
-| :-: | :-: |
-|<img src="Results/MemViscosityRBC_Parabolic_N16/MembraneForcesProfileMemViscosityRBC_Parabolic_N16_xy.gif">|<video src="https://user-images.githubusercontent.com/13091572/209037857-2d97b21f-55fd-42d1-8d96-dc1168a5cae4.mp4" >|
+Click on the image below to watch a video illustrating the flow field around a red blood cell while flowing in a parabolic flow with a viscoelastic membrane model.
+
+[![Video](https://img.youtube.com/vi/eJZCY7gk4wk/maxresdefault.jpg)](https://www.youtube.com/watch?v=eJZCY7gk4wk)
 
 ---
 
